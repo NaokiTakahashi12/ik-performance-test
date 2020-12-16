@@ -1,0 +1,11 @@
+version: '2.4'
+services:
+    tester:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        volumes: 
+            - ./data/generated/darwin_op:/ik-performance-test/data/generated/darwin_op
+            - ./data/generated/atlas_v5:/ik-performance-test/data/generated/atlas_v5
+        working_dir: /ik-performance-test/build
+        command: ./bin/multiple_ik_benchmark
