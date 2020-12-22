@@ -11,8 +11,6 @@ target_sources(IKL
         Solver/GaussNewtonQR.cpp
         Solver/GaussNewtonSVD.cpp
         Solver/JacobianTranspose.cpp
-        Solver/LeastSquares.cpp
-        Solver/LeastSquaresQR.cpp
         Solver/LevenbergMarquardtED.cpp
         Solver/LevenbergMarquardtSRC.cpp
         Solver/LevenbergMarquardtSRM.cpp

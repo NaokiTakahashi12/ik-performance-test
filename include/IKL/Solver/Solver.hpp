@@ -2,8 +2,6 @@
 #pragma once
 
 #include "JacobianTranspose.hpp"
-#include "LeastSquares.hpp"
-#include "LeastSquaresQR.hpp"
 #include "GaussNewton.hpp"
 #include "GaussNewtonQR.hpp"
 #include "GaussNewtonSVD.hpp"

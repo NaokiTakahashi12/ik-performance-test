@@ -46,8 +46,6 @@ auto main() -> int {
 
             // Push back inverse kinematics solvers
             darwin_op_iks.push_back(std::make_unique<Solver::JacobianTranspose<Scaler>>(ik_param));
-            darwin_op_iks.push_back(std::make_unique<Solver::LeastSquares<Scaler>>(ik_param));
-            darwin_op_iks.push_back(std::make_unique<Solver::LeastSquaresQR<Scaler>>(ik_param));
             darwin_op_iks.push_back(std::make_unique<Solver::GaussNewton<Scaler>>(ik_param));
             darwin_op_iks.push_back(std::make_unique<Solver::GaussNewtonQR<Scaler>>(ik_param));
             darwin_op_iks.push_back(std::make_unique<Solver::GaussNewtonSVD<Scaler>>(ik_param));
@@ -91,8 +89,6 @@ auto main() -> int {
 
             // Push back inverse kinematics solvers
             atlas_v5_iks.push_back(std::make_unique<Solver::JacobianTranspose<Scaler>>(ik_param));
-            atlas_v5_iks.push_back(std::make_unique<Solver::LeastSquares<Scaler>>(ik_param));
-            atlas_v5_iks.push_back(std::make_unique<Solver::LeastSquaresQR<Scaler>>(ik_param));
             atlas_v5_iks.push_back(std::make_unique<Solver::GaussNewton<Scaler>>(ik_param));
             atlas_v5_iks.push_back(std::make_unique<Solver::GaussNewtonQR<Scaler>>(ik_param));
             atlas_v5_iks.push_back(std::make_unique<Solver::GaussNewtonSVD<Scaler>>(ik_param));
